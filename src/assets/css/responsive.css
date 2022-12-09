@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1050px) {
+  .cc {
+    flex-wrap: wrap;
+  }
+  .cc-left {
+    width: 100%;
+  }
+  .cc-right {
+    width: 100%;
+  }
+  .ct-content {
+    flex-wrap: wrap;
+  }
+  .ct-content__left {
+    width: 100%;
+  }
+  .ct-content__right {
+    width: 100%;
+  }
+  .ct-content-btn {
+    width: 100%;
+  }
+  .ct-content-hs {
+    width: 100%;
+  }
+  .ct-content-hs-items {
+    width: 100%;
+  }
+  .ct-content-hs-reletive {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .can-pro {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .can-pro-left {
+    width: 100%;
+  }
+  .can-pro-right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .common-width {
+    width: calc(100% - 50px);
+  }
+  .cc-input-atj {
+    width: 100%;
+  }
+  .can-pro-left-item {
+    flex-wrap: wrap;
+  }
+  .can-pro-left-item-title {
+    padding-right: 0px;
+  }
+  .can-pro-left-work-title {
+    width: 100%;
+  }
+}
