@@ -43,8 +43,13 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 130%;
-  text-decoration-line: underline;
+}
+.header-job-active {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
   color: #0066ff;
+  text-decoration-line: underline;
 }
 .header-menu-list {
   display: flex;
@@ -412,7 +417,7 @@ select {
   padding: 7px 20px;
   width: 100%;
 }
-.can-pro-right-comment-info{
+.can-pro-right-comment-info {
   display: flex;
   align-items: center;
   flex-wrap: wrap;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Notification from "../assets/images/notification.svg";
 import User from "../assets/images/user.svg";
 import Search from "../assets/images/search.svg";
@@ -10,26 +10,36 @@ const Header = () => {
       <div className="common-width">
         <div className="header-content">
           <div className="header-logo-job">
-            <Link to="/" className="header-logo">
+            <NavLink to="/" className="header-logo">
               Logo
-            </Link>
-            <Link to="/" className="header-job">
+            </NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "header-job-active" : "header-job"
+              }
+            >
               Jobs
-            </Link>
+            </NavLink>
           </div>
           <div className="header-menu-list">
-            <Link to="/candidates" className="header-menu">
+            <NavLink
+              to="/candidates"
+              className={({ isActive }) =>
+                isActive ? "header-job-active" : "header-menu"
+              }
+            >
               Candidates
-            </Link>
-            <Link to="/" className="header-menu">
+            </NavLink>
+            <NavLink to="/" className="header-menu">
               Interviews
-            </Link>
-            <Link to="/" className="header-menu">
+            </NavLink>
+            <NavLink to="/" className="header-menu">
               Assessments
-            </Link>
-            <Link to="/" className="header-menu">
+            </NavLink>
+            <NavLink to="/" className="header-menu">
               Settings
-            </Link>
+            </NavLink>
           </div>
           <div className="header-search">
             <img src={Search} alt="" className="header-search-icon" />
