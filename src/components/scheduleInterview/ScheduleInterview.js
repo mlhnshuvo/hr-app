@@ -10,7 +10,7 @@ const ScheduleInterview = () => {
       <div className="tt">
         <div className="tt-back">
           <img src={Back} alt="" />
-          <p className="tt-back-create">Create a candidate</p>
+          <p className="tt-back-create">Schedule an Interview</p>
         </div>
       </div>
       <div className="sched-inter-content-main">
