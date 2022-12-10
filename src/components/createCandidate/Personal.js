@@ -5,7 +5,6 @@ const CreateCandidate = () => {
   return (
     <div>
       <p className="cc-pd">Personal Details</p>
-
       <div className="cc-form-content">
         <div>
           <label className="cc-label">First Name*</label>
