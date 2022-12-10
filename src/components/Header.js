@@ -31,13 +31,23 @@ const Header = () => {
             >
               Candidates
             </NavLink>
-            <NavLink to="/" className="header-menu">
+            <NavLink
+              to="/scheduleinterview"
+              className={({ isActive }) =>
+                isActive ? "header-job-active" : "header-menu"
+              }
+            >
               Interviews
             </NavLink>
             <NavLink to="/" className="header-menu">
               Assessments
             </NavLink>
-            <NavLink to="/" className="header-menu">
+            <NavLink
+              to="/sendmail"
+              className={({ isActive }) =>
+                isActive ? "header-job-active" : "header-menu"
+              }
+            >
               Settings
             </NavLink>
           </div>

@@ -29,6 +29,21 @@
   .ct-content-hs-reletive {
     width: 100%;
   }
+  .sched-inter-right-file-text {
+    width: 100%;
+  }
+  .sched-inter-content {
+    flex-wrap: wrap;
+  }
+  .sched-inter-content-left {
+    width: 100%;
+  }
+  .sched-inter-content-right {
+    width: 100%;
+  }
+  .sched-inter-content {
+    gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -59,5 +74,20 @@
   }
   .can-pro-left-work-title {
     width: 100%;
+  }
+  .sched-inter-content-left-checkbox-main {
+    gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sched-inter-content-btn {
+    width: 100%;
+  }
+  .sched-inter-left-input {
+    flex-wrap: wrap;
+  }
+  .sched-inter-left-input-attach {
+    margin-top: 100px;
   }
 }
