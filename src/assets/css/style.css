@@ -573,7 +573,7 @@ select {
   right: 37px;
   cursor: pointer;
 }
-.model-overlay {
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
