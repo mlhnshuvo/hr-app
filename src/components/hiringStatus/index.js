@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import AssignJob from "./AssignJob";
+import Modal from "../modal/Modal";
 import TitleTop from "./TitleTop";
 import ContentTop from "./ContentTop";
 import CandidateProfileLeft from "./CandidateProfileLeft";
 import CandidateProfileRight from "./CandidateProfileRight";
 
-const index = () => {
+const Index = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const modalHandler = (value) => {
+    setModalOpen(value);
+  };
+
   return (
     <div>
       <TitleTop />
-      <ContentTop />
+      <ContentTop modalHandler={modalHandler} />
       <div className="common-width">
         <p className="content-top-border content-top-border__can-pro"></p>
         <div className="can-pro">
@@ -16,8 +24,13 @@ const index = () => {
           <CandidateProfileRight />
         </div>
       </div>
+      {modalOpen && (
+        <Modal modalHandler={modalHandler}>
+          <AssignJob />
+        </Modal>
+      )}
     </div>
   );
 };
 
-export default index;
+export default Index;

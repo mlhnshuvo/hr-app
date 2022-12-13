@@ -23,9 +23,6 @@
   .ct-content-hs {
     width: 100%;
   }
-  .ct-content-hs-items {
-    width: 100%;
-  }
   .ct-content-hs-reletive {
     width: 100%;
   }
@@ -44,6 +41,9 @@
   .sched-inter-content {
     gap: 20px;
   }
+  .modal {
+    padding: 21px 75px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -56,6 +56,15 @@
   }
   .can-pro-right {
     width: 100%;
+  }
+  .ct-content-hs-items {
+    top: 56px;
+    right: -165px;
+  }
+  .modal {
+    width: 80%;
+    height: 80%;
+    padding: 30px;
   }
 }
 
@@ -105,5 +114,13 @@
   }
   .sched-inter-left-input-attach {
     margin-top: 100px;
+  }
+  .modal {
+    width: 90%;
+    height: 90%;
+    padding: 50px 10px;
+  }
+  .assjob-input-container {
+    flex-wrap: wrap;
   }
 }

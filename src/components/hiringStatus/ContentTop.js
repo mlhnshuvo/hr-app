@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BtnArrow from "../../assets/images/btnarrow.svg";
 
-const ContentTop = () => {
+const ContentTop = ({ modalHandler }) => {
   const [menu, setMenu] = useState({
     toggle: false,
     menuName: "Hiring Stage",
@@ -34,7 +34,9 @@ const ContentTop = () => {
         </div>
         <div className="ct-content ct-content__right">
           <p className="ct-content-btn">Schedule Interview</p>
-          <p className="ct-content-btn">Assign to a job</p>
+          <p className="ct-content-btn" onClick={() => modalHandler(true)}>
+            Assign to a job
+          </p>
           <div className="ct-content-hs-reletive">
             <div
               className="ct-content-hs"

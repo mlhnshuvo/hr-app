@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Notification from "../assets/images/notification.svg";
-import User from "../assets/images/user.svg";
-import Search from "../assets/images/search.svg";
+import Notification from "../../assets/images/notification.svg";
+import User from "../../assets/images/user.svg";
+import Search from "../../assets/images/search.svg";
 
 const Header = () => {
   return (
